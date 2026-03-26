@@ -1,6 +1,5 @@
 public class ListaEnlazada {
     private Nodo cabeza;
-    
     public ListaEnlazada (){
         cabeza = null;
     }
@@ -10,8 +9,11 @@ public class ListaEnlazada {
             cabeza=nuevo;
         } else {
             Nodo actual = cabeza;
-            while(actual.sig !=null)
-        }
+            while(actual.sig !=null){
+                actual=actual.sig;
+            }
+            actual.sig=nuevo;
+                }
         
     }
 }

@@ -15,5 +15,10 @@ public class Taller21260326 {
         lista.Agregar(aux);
         }
         }    
+        for(int i=1;i<n;i++){
+        if(!lista.buscar(i)){
+            System.out.println("El numero faltante es: "+i);
+        }
+    }
     }
 }

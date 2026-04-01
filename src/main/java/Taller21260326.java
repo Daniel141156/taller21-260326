@@ -11,13 +11,18 @@ public class Taller21260326 {
             int aux =sn.nextInt();
             if(aux<1 || aux>n){
                 System.out.println("Ingrese un valor válido");
+                i--;
+            }else if(lista.buscar(aux)){
+                System.out.println("No ingresar un valor repetido");
+                i--;
             }else{
         lista.Agregar(aux);
         }
         }    
-        for(int i=1;i<n;i++){
+        for(int i=1;i<=n;i++){
         if(!lista.buscar(i)){
             System.out.println("El numero faltante es: "+i);
+            break;
         }
     }
     }
